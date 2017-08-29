@@ -1,4 +1,4 @@
 
-const {request, response} = require("rec");
+const rec = require("rec");
 
-response().outputStream.print("You are visiting: " + request().requestURI);
+rec.response.outputStream.print("You are visiting: " + rec.request.requestURI);

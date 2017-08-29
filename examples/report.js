@@ -1,6 +1,6 @@
 
-const {action, report}  = require("rec");
+const rec  = require("rec");
 
-action(function (it) {
-    report(it);
+rec.action(function (it) {
+    rec.report(it);
 }).accept("fuck!");

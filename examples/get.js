@@ -1,4 +1,5 @@
 
-const {get, report} = require("rec");
+const rec = require("rec");
+const rest = require("rec/rest");
 
-report(get("http://localhost:8080/api/resource/10"));
+rec.report(rest.get1("http://localhost:8080/api/resource/10"));
